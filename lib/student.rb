@@ -22,7 +22,7 @@ class Student
   end
 
   def self.find_by_name(name)
-    
+
     sql = <<-SQL
     SELECT *
     FROM students
@@ -82,5 +82,5 @@ class Student
       self.new_from_db(student)
     end
   end
-  
+
 end
